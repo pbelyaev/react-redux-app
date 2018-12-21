@@ -1,10 +1,11 @@
-export const addTodo = (payload) => ({
-  type: 'ADD_TODO',
-  ...payload,
-  completed: false,
+import {TODO, TODOS} from "../constants/actions";
+
+export const addTodo = (text) => ({
+  type: TODOS.ADD,
+  payload: {text},
 });
 
-export const toggleTodoCompletedState = (payload) => ({
-  type: 'TOGGLE_TODO_COMPLETED_STATE',
-  ...payload,
+export const toggleTodoCompletedState = (index) => ({
+  type: TODO.TOGGLE_COMPLETED,
+  payload: {index},
 });

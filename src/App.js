@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import AppComponent from './components/AppComponent';
+import { App } from './components/App';
 
 render(
-  <AppComponent />,
+  <App />,
   document.querySelector('#root'),
 );
